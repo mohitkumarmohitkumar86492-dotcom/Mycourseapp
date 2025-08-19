@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore a wide range of online courses at MyCourseApp. Find the perfect course to advance your skills and career.">
+    <meta name="theme-color" content="#4CAF50">
+    <meta property="og:title" content="All Courses - MyCourseApp">
+    <meta property="og:description" content="Browse our comprehensive catalog of online courses.">
+
+    <title>All Courses - MyCourseApp</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="./index.html" class="header__logo">MyCourseApp</a>
+            <div class="header__menu">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="./index.html" class="nav__link">Home</a></li>
+                        <li><a href="./courses.html" class="nav__link">Courses</a></li>
+                        <li><a href="./about.html" class="nav__link">About</a></li>
+                        <li><a href="./contact.html" class="nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header__actions">
+                    <button class="btn btn--primary">Enroll Now</button>
+                    <button id="theme-toggle-btn" class="theme-toggle" aria-label="Toggle light and dark theme"></button>
+                </div>
+            </div>
+            <button class="header__toggle" id="menu-toggle-btn" aria-label="Open mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="section page-header">
+            <div class="container">
+                <h1 class="page-header__title">Our Courses</h1>
+                <p>Find the perfect course to match your ambition.</p>
+            </div>
+        </section>
+
+        <!-- FILTERING SECTION -->
+        <section class="section section--bg">
+            <div class="container">
+                <div class="filters__container">
+                    <input type="text" id="search-input" placeholder="Search by title or instructor..." class="filter__search">
+                    <div class="filter__group">
+                        <select id="category-filter" aria-label="Filter by category">
+                            <option value="all">All Categories</option>
+                            <option value="Development">Development</option>
+                            <option value="Design">Design</option>
+                            <option value="Marketing">Marketing</option>
+                            <option value="AI">Artificial Intelligence</option>
+                        </select>
+                        <select id="price-filter" aria-label="Filter by price">
+                            <option value="all">All Prices</option>
+                            <option value="free">Free</option>
+                            <option value="1-1000">₹1 - ₹1000</option>
+                            <option value="1001-5000">₹1001 - ₹5000</option>
+                            <option value="5001+">₹5001+</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COURSES GRID SECTION -->
+        <section class="section">
+            <div class="container">
+                <div id="course-grid-container" class="course-grid">
+                    <!-- Course cards will be dynamically inserted here -->
+                    <p>Loading courses...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__col">
+                <h4 class="footer__logo">MyCourseApp</h4>
+                <p>Empowering learners through accessible, high-quality online education.</p>
+            </div>
+            <div class="footer__col">
+                <h5 class="footer__title">Quick Links</h5>
+                <ul class="footer__list">
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./courses.html">All Courses</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h5 class="footer__title">Connect With Us</h5>
+                <div class="footer__socials">
+                    <a href="#" aria-label="Facebook">F</a>
+                    <a href="#" aria-label="Twitter">T</a>
+                    <a href="#" aria-label="LinkedIn">L</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2025 MyCourseApp. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

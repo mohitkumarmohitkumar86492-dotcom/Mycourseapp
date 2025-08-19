@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about MyCourseApp, our mission, our team, and how we are revolutionizing online education.">
+    <meta name="theme-color" content="#4CAF50">
+    <meta property="og:title" content="About Us - MyCourseApp">
+    <meta property="og:description" content="Discover our mission to make quality education accessible to all.">
+
+    <title>About Us - MyCourseApp</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="./index.html" class="header__logo">MyCourseApp</a>
+            <div class="header__menu">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="./index.html" class="nav__link">Home</a></li>
+                        <li><a href="./courses.html" class="nav__link">Courses</a></li>
+                        <li><a href="./about.html" class="nav__link">About</a></li>
+                        <li><a href="./contact.html" class="nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header__actions">
+                    <button class="btn btn--primary">Enroll Now</button>
+                    <button id="theme-toggle-btn" class="theme-toggle" aria-label="Toggle light and dark theme"></button>
+                </div>
+            </div>
+            <button class="header__toggle" id="menu-toggle-btn" aria-label="Open mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="section page-header">
+            <div class="container">
+                <h1 class="page-header__title">About MyCourseApp</h1>
+                <p>Our mission is to make high-quality education accessible to everyone, everywhere.</p>
+            </div>
+        </section>
+
+        <!-- MISSION SECTION -->
+        <section class="section">
+            <div class="container about__mission-container">
+                <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop" alt="A diverse team collaborating in a modern office." class="about__mission-image">
+                <div class="about__mission-content">
+                    <h2 class="section__title text-left">Our Mission</h2>
+                    <p>We believe learning is the key to personal and professional growth. Our goal is to break down barriers to education by providing engaging, affordable, and expert-taught online courses. We are dedicated to empowering individuals to achieve their goals and pursue their passions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS SECTION -->
+        <section class="section section--bg">
+            <div class="container">
+                <h2 class="section__title">How It Works</h2>
+                <div class="how-it-works__grid">
+                    <div class="how-it-works__step">
+                        <div class="step__number">1</div>
+                        <h3 class="step__title">Browse Courses</h3>
+                        <p>Find the perfect course from our extensive catalog.</p>
+                    </div>
+                    <div class="how-it-works__step">
+                        <div class="step__number">2</div>
+                        <h3 class="step__title">Enroll & Learn</h3>
+                        <p>Learn at your own pace with on-demand video lectures.</p>
+                    </div>
+                    <div class="how-it-works__step">
+                        <div class="step__number">3</div>
+                        <h3 class="step__title">Get Certified</h3>
+                        <p>Receive a certificate upon completion to boost your resume.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TEAM SECTION -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title">Meet Our Team</h2>
+                <div class="team__grid">
+                    <div class="team__member">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1888&auto=format&fit=crop" alt="Photo of Jane Doe" class="team__member-photo">
+                        <h4 class="team__member-name">Jane Doe</h4>
+                        <p class="team__member-role">Founder & CEO</p>
+                    </div>
+                    <div class="team__member">
+                        <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=2071&auto=format&fit=crop" alt="Photo of John Smith" class="team__member-photo">
+                        <h4 class="team__member-name">John Smith</h4>
+                        <p class="team__member-role">Head of Instruction</p>
+                    </div>
+                    <div class="team__member">
+                        <img src="https://images.unsplash.com/photo-1590650213165-c681534a7e93?q=80&w=2070&auto=format&fit=crop" alt="Photo of Emily White" class="team__member-photo">
+                        <h4 class="team__member-name">Emily White</h4>
+                        <p class="team__member-role">Lead Developer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section class="section section--bg">
+            <div class="container faq__container">
+                <h2 class="section__title">Frequently Asked Questions</h2>
+                <div class="faq__item">
+                    <button class="faq__question">What payment methods do you accept?</button>
+                    <div class="faq__answer">
+                        <p>We accept all major credit cards, PayPal, and various UPI payment options for your convenience.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question">Are the courses self-paced?</button>
+                    <div class="faq__answer">
+                        <p>Yes! All our courses are completely self-paced. You can start and finish them according to your own schedule.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question">Do I get a certificate upon completion?</button>
+                    <div class="faq__answer">
+                        <p>Absolutely. Upon successful completion of any course, you will receive a verifiable digital certificate that you can share on your professional networks.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+         <div class="container footer__container">
+            <div class="footer__col">
+                <h4 class="footer__logo">MyCourseApp</h4>
+                <p>Empowering learners through accessible, high-quality online education.</p>
+            </div>
+            <div class="footer__col">
+                <h5 class="footer__title">Quick Links</h5>
+                <ul class="footer__list">
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./courses.html">All Courses</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h5 class="footer__title">Connect With Us</h5>
+                <div class="footer__socials">
+                    <a href="#" aria-label="Facebook">F</a>
+                    <a href="#" aria-label="Twitter">T</a>
+                    <a href="#" aria-label="LinkedIn">L</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2025 MyCourseApp. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>```
+
+---
+### **`contact.html`**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact MyCourseApp for support, inquiries, or feedback. We're here to help you on your learning journey.">
+    <meta name="theme-color" content="#4CAF50">
+    <meta property="og:title" content="Contact Us - MyCourseApp">
+    <meta property="og:description" content="Get in touch with the MyCourseApp team.">
+    
+    <title>Contact Us - MyCourseApp</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="./index.html" class="header__logo">MyCourseApp</a>
+            <div class="header__menu">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="./index.html" class="nav__link">Home</a></li>
+                        <li><a href="./courses.html" class="nav__link">Courses</a></li>
+                        <li><a href="./about.html" class="nav__link">About</a></li>
+                        <li><a href="./contact.html" class="nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header__actions">
+                    <button class="btn btn--primary">Enroll Now</button>
+                    <button id="theme-toggle-btn" class="theme-toggle" aria-label="Toggle light and dark theme"></button>
+                </div>
+            </div>
+            <button class="header__toggle" id="menu-toggle-btn" aria-label="Open mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="section page-header">
+            <div class="container">
+                <h1 class="page-header__title">Get In Touch</h1>
+                <p>We'd love to hear from you. Let us know how we can help.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container contact__container">
+                <div class="contact__form-wrapper">
+                    <h2 class="section__title text-left">Send us a Message</h2>
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                            <small class="error-text">Name is required.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                            <small class="error-text">A valid email is required.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                            <small class="error-text">Subject is required.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <small class="error-text">Message cannot be empty.</small>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact__details">
+                    <h2 class="section__title text-left">Contact Information</h2>
+                    <p><strong>Address:</strong> 123 Learning Lane, Education City, India</p>
+                    <p><strong>Email:</strong> support@mycourse.app</p>
+                    <p><strong>Phone:</strong> +91 98765 43210</p>
+                    <div class="contact__map">
+                        <img src="https://images.unsplash.com/photo-1579549924376-1babd35361b4?q=80&w=1964&auto=format&fit=crop" alt="A placeholder map showing a location.">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="toast-container"></div>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__col">
+                <h4 class="footer__logo">MyCourseApp</h4>
+                <p>Empowering learners through accessible, high-quality online education.</p>
+            </div>
+            <div class="footer__col">
+                <h5 class="footer__title">Quick Links</h5>
+                <ul class="footer__list">
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./courses.html">All Courses</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h5 class="footer__title">Connect With Us</h5>
+                <div class="footer__socials">
+                    <a href="#" aria-label="Facebook">F</a>
+                    <a href="#" aria-label="Twitter">T</a>
+                    <a href="#" aria-label="LinkedIn">L</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2025 MyCourseApp. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
