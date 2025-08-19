@@ -1,23 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="hi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Course App</title>
-  <style>
-    body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
-    nav a { margin: 0 15px; text-decoration: none; color: blue; }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LocalCart - Demo</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>🚀 Welcome to My Course App</h1>
-  <p>Yeh meri pehli free website hai jo GitHub Pages par chal rahi hai!</p>
-  
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="courses.html">Courses</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <header class="site-header">
+    <h1>LocalCart</h1>
+    <div class="cart-btn" id="cartBtn">🛒 <span id="cartCount">0</span></div>
+  </header>
+
+  <main class="container">
+    <section class="products">
+      <h2>उत्पाद</h2>
+      <div id="productList" class="grid"></div>
+    </section>
+
+    <aside class="cart" id="cartPanel" aria-hidden="true">
+      <h2>कार्ट</h2>
+      <div id="cartItems"></div>
+      <div class="cart-footer">
+        <div>कुल: ₹<span id="cartTotal">0.00</span></div>
+        <button id="checkoutBtn" class="primary">चेकआउट</button>
+      </div>
+    </aside>
+  </main>
+
+  <template id="productTpl">
+    <article class="card">
+      <img class="thumb" src="" alt="">
+      <h3 class="title"></h3>
+      <p class="price">₹<span></span></p>
+      <button class="addBtn">कार्ट में डालें</button>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
 </body>
 </html>
